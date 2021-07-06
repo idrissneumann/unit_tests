@@ -30,6 +30,8 @@ services:
       - todo_db
     ports:
       - 5000:5000
+    env_file: 
+      - .env
 
 networks:
   todo_api:
