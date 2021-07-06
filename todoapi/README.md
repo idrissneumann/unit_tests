@@ -6,6 +6,10 @@ Cette API à l'origine viens de ce [repo github](https://github.com/paulodhiambo
 
 Elle a aussi été mieux découpée en couche afin de permettre de rendre ces dernières testables unitairement.
 
+## Table des matières
+
+[[_TOC_]]
+
 ## Tester l'api en local
 
 ### Démarrer en local en utilisant docker
@@ -117,4 +121,3 @@ todo=# SELECT * FROM todos WHERE id = 1;
 unit_tests/todoapi$ curl -X GET http://127.0.0.1:5000/api/v1/todo
 {"todos":[{"id":2.0,"title":"une t\u00e2che","todo_description":"une description de la t\u00e2che"},{"id":3.0,"title":"une autre t\u00e2che","todo_description":"une description de la t\u00e2che"}]}
 ```
-

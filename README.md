@@ -17,3 +17,9 @@ Pour pouvoir suivre cette formation, il vous faudra les outils suivants sur votr
 * docker
 * docker-compose
 * git
+
+## API Todo
+
+### Démarrer et tester l'api en local
+
+Se référer à [cette documentation](./README.md).
