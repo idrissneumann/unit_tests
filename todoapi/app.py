@@ -2,22 +2,18 @@ from flask import Flask, request, jsonify, make_response
 from flask_sqlalchemy import SQLAlchemy
 from marshmallow import fields
 from marshmallow_sqlalchemy import ModelSchema
+
 import os
+
+from db_connection import DbConnection
 
 app = Flask(__name__)
 
 host = os.environ['TODO_HOST']
 port = os.environ['TODO_PORT']
 
-psql_user = os.environ['PSQL_USER']
-psql_password = os.environ['PSQL_PASSWORD']
-psql_host = os.environ['PSQL_HOST']
-psql_port = os.environ['PSQL_PORT']
-psql_dbname = os.environ['PSQL_DBNAME']
-
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://{}:{}@{}:{}/{}'.format(psql_user, psql_password, psql_host, psql_port, psql_dbname)
-
-db = SQLAlchemy(app)
+connection = DbConnection(app)
+db = connection.get_db()
 
 # Model
 class Todo(db.Model):
@@ -40,7 +36,6 @@ class Todo(db.Model):
 
 
 db.create_all()
-
 
 class TodoSchema(ModelSchema):
     class Meta(ModelSchema.Meta):

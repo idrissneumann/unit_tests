@@ -4,7 +4,7 @@ Une api restful permettant de remplir une TODO List.
 
 Cette API à l'origine viens de ce [repo github](https://github.com/paulodhiambo/flaskcrudapi) et a été ré-écrite pour fonctionner avec `docker` de manière portable et PostgreSQL au lieu de MySQL.
 
-Elle a aussi été mieux découpée en couche afin de permettre de rendre ces dernières testables unitairement.
+Elle a été modifiée afin de rendre la connexion à la base de donnée mockable et donc testable unitairement.
 
 ## Table des matières
 
