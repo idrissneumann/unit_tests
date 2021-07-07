@@ -18,8 +18,8 @@ CMD ["python", "-u", "app.py"]
 
 FROM todo_api AS todo_unit_tests
 
-WORKDIR /todo_api/tests
+WORKDIR /todo_api
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r tests/requirements.txt
 
 CMD ["python", "-m", "unittest"]

@@ -4,7 +4,7 @@ import os
 
 class DbConnection():
     app = None
-    db = SQLAlchemy(app)
+    db = None
 
     def __init__(self, app):
         self.app = app
