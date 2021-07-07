@@ -15,7 +15,7 @@ Elle a été modifiée afin d'être découpée en couche et rendre certaines cho
 ### Démarrer en local en utilisant docker
 
 ```shell
-unit_tests/todoapi$ docker-compose up --force-recreate --build -d
+unit_tests/todoapi$ docker-compose up --force-recreate --build -d todo_api
 ```
 
 ### Vérifier la base de données
@@ -120,4 +120,10 @@ todo=# SELECT * FROM todos WHERE id = 1;
 ```shell
 unit_tests/todoapi$ curl -X GET http://127.0.0.1:5000/api/v1/todo
 {"todos":[{"id":2.0,"title":"une t\u00e2che","todo_description":"une description de la t\u00e2che"},{"id":3.0,"title":"une autre t\u00e2che","todo_description":"une description de la t\u00e2che"}]}
+```
+
+## Lancer les tests unitaires
+
+```shell
+unit_tests/todoapi$ docker-compose up --force-recreate --build todo_unit_tests
 ```
