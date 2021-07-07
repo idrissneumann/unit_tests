@@ -7,10 +7,11 @@ class TodoModelGenerator():
     def get_model(self):
         class Todo(self.db.Model):
             __tablename__ = "todos"
-            id = self.db.Column(self.db.Integer, primary_key=True)
-            title = self.db.Column(self.db.String(20))
-            todo_description = self.db.Column(self.db.String(100))
-
+            db = self.db
+            id = db.Column(db.Integer, primary_key=True)
+            title = db.Column(db.String(20))
+            todo_description = db.Column(self.db.String(100))
+            
             def create(self):
                 self.db.session.add(self)
                 self.db.session.commit()

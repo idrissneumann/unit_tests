@@ -18,4 +18,4 @@ class TodoSchemaGenerator():
             id = fields.Number(dump_only=True)
             title = fields.String(required=True)
             todo_description = fields.String(required=True)
-        return TodoSchema
+        return TodoSchema()
