@@ -34,7 +34,6 @@ services:
       - .env
   todo_unit_tests:
     image: harbor.comwork.io/todoapi/unittest:latest
-    container_name: todo_unit_tests
     restart: always
     build:
       context: .
