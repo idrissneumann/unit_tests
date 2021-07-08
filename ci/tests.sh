@@ -1,5 +1,5 @@
 #!/bin/bash
 
 cd todoapi
-docker-compose up --force-recreate --build todo_unit_tests
+COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compose up --force-recreate --build todo_unit_tests
 cd -
