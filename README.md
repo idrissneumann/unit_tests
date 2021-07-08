@@ -30,6 +30,7 @@ Se référer à [cette documentation](./todoapi/README.md)
 
 ### Compléter les tests unitaires
 
-* Compléter les tests en `TODO` dans le fichier `unit_tests/todoapi/tests/test_todo_repository.py`
+* Compléter les tests en `TODO` dans le fichier [`unit_tests/todoapi/tests/test_app.py`](./todoapi/tests/test_app.py)
+* Compléter les tests en `TODO` dans le fichier [`unit_tests/todoapi/tests/test_todo_repository.py`](./todoapi/tests/test_todo_repository.py)
 * Assurez-vous qu'ils passent en vous référent à [cette documentation](./todoapi/README.md)
 * Pushez votre branche régulièrement et observez le résultat sur le pipeline
