@@ -4,6 +4,10 @@ class TodoModelGenerator():
     def __init__(self, db):
         self.db = db
 
+    def query(self):
+        model = self.get_model()
+        return model.query
+
     def get_model(self):
         class Todo(self.db.Model):
             __tablename__ = "todos"
