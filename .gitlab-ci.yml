@@ -4,13 +4,13 @@ stages:
 unittest:
   stage: test
   script:
-    - setsid ./ci/docker-deliver.sh "cmd-api" "2.11" "x86"
+    - setsid ./ci/tests.sh
   only:
     refs:
       - /^(main.*)$/
     changes:
       - .gitlab-ci.yml
-      - ci/test.sh
+      - ci/tests.sh
       - todoapi/*
       - todoapi/tests/*
   tags:
