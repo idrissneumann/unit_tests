@@ -3,13 +3,30 @@ from todo_repository import TodoRepository
 
 import os
 
-app = Flask(__name__)
+global app 
+global host
+global port
 
-host = os.environ['TODO_HOST']
-port = os.environ['TODO_PORT']
+app = None
+host = None
+port = None
 
+def init_app():
+    global app 
+    global host
+    global port
+
+    if app is None:
+        app = Flask(__name__)
+
+    if host is None:
+        host = os.environ['TODO_HOST']
+
+    if port is None:
+        port = os.environ['TODO_PORT']
+
+init_app()
 repository = TodoRepository(app)
-
 repository.create_all()
 
 @app.route('/api/v1/todo', methods=['GET'])
