@@ -6,7 +6,7 @@ from todo_model import TodoModelGenerator
 from todo_schema import TodoSchemaGenerator
 
 from unittest import TestCase
-from unittest.mock import MagicMock, Mock, patch
+from unittest.mock import Mock, patch
 
 class Query():
     def all(self):

@@ -39,7 +39,8 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-      target: todo_unit_tests
+      target: todo_api
+    command: ["python", "-m", "unittest"]
 
 networks:
   todo_api:
