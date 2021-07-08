@@ -31,7 +31,9 @@ repository.create_all()
 
 @app.route('/api/v1/todo', methods=['GET'])
 def index():
-    return make_response(jsonify({"todos": repository.get_all()}))
+    todos = repository.get_all()
+    print ("todos = {}".format(todos))
+    return make_response(jsonify({"todos": todos}))
 
 @app.route('/api/v1/todo/<id>', methods=['GET'])
 def get_todo_by_id(id):
