@@ -14,4 +14,4 @@ unittest:
       - todoapi/*
       - todoapi/tests/*
   tags:
-    - unittest_training
+    - training_unittest
