@@ -26,6 +26,9 @@ class Session():
     def add(self, data):
         return None
 
+    def delete(self, data):
+        return None
+
 class Todo():
     id = None
     title = None
