@@ -18,8 +18,18 @@ Pour pouvoir suivre cette formation, il vous faudra les outils suivants sur votr
 * docker-compose
 * git
 
-## API Todo
+## Tester l'api TODO
 
-### Démarrer et tester l'api en local
+### Créer votre branche
 
-Se référer à [cette documentation](./README.md).
+Créer une branche git `main_{votre nom}` à partir de `main`.
+
+### Tester l'application en local avec curl
+
+Se référer à [cette documentation](./todoapi/README.md)
+
+### Compléter les tests unitaires
+
+* Compléter les tests en `TODO` dans le fichier `unit_tests/todoapi/tests/test_todo_repository.py`
+* Assurez-vous qu'ils passent en vous référent à [cette documentation](./todoapi/README.md)
+* Pushez votre branche régulièrement et observez le résultat sur le pipeline
