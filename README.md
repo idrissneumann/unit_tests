@@ -8,6 +8,8 @@
 
 L'ensemble des concepts pour le langage Java sont présent à [la FAQ tests](https://java.developpez.com/faq/tests/) sur developpez.com.
 
+Vous avez également les slides de la formation [ici](./slides_formation.pdf).
+
 ## Pré-requis
 
 Dans cette formation nous allons voir le concept des tests unitaires et des mocks à la fois pour Java mais aussi Python. La partie pratique sera faite avec Python.
