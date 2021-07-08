@@ -12,7 +12,7 @@ class TodoSchemaGenerator():
     def get_schema(self, many = False, only = None):
         class TodoSchema(ModelSchema):
             class Meta(ModelSchema.Meta):
-                model = self.model
+                model = self.model.get_model()
                 sqla_session = self.db.session
 
             id = fields.Number(dump_only=True)

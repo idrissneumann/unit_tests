@@ -1,5 +1,6 @@
 class TodoModelGenerator():
     db = None
+    model = None
 
     def __init__(self, db):
         self.db = db
@@ -9,6 +10,9 @@ class TodoModelGenerator():
         return model.query
 
     def get_model(self):
+        if self.model is not None:
+            return self.model
+
         class Todo(self.db.Model):
             __tablename__ = "todos"
             db = self.db
@@ -27,4 +31,6 @@ class TodoModelGenerator():
 
             def __repr__(self):
                 return f"{self.id}"
-        return Todo
+        
+        self.model = Todo
+        return self.model
