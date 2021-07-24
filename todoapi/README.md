@@ -47,6 +47,12 @@ todo=# SELECT * FROM todos;
 (0 rows)
 ```
 
+Si la table n'existe pas encore, la créer avec la commande SQL suivante:
+
+```sql
+CREATE TABLE todos (id SERIAL, title VARCHAR(254), todo_description VARCHAR(254));
+```
+
 ### Enregistrer une entrée via l'api
 
 ```shell
