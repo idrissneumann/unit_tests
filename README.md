@@ -16,8 +16,8 @@ Dans cette formation nous allons voir le concept des tests unitaires et des mock
 
 Pour pouvoir suivre cette formation, il vous faudra les outils suivants sur votre machine:
 
-* docker
-* docker-compose
+* docker (>= 20.10.7)
+* docker-compose (>= 1.29.2)
 * git
 
 ## Tester l'api TODO
