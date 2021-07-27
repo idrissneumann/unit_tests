@@ -10,6 +10,10 @@ L'ensemble des concepts pour le langage Java sont présent à [la FAQ tests](htt
 
 Vous avez également les slides de la formation [ici](./slides_formation.pdf).
 
+Vous avez aussi les vidéos de la formation disponibles sur youtube:
+* [Partie 1](https://youtu.be/riikMWhuJGg)
+* [Partie 2](https://youtu.be/4P0xjcOALjY)
+
 ## Pré-requis
 
 Dans cette formation nous allons voir le concept des tests unitaires et des mocks à la fois pour Java mais aussi Python. La partie pratique sera faite avec Python.
