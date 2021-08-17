@@ -1,5 +1,15 @@
 stages:
+  - mirror
   - test
+
+mirror:
+  stage: mirror
+  script:
+    - setsid ./ci/mirror.sh
+  only:
+    - /^(main.*)$/
+  tags:
+    - comwork-training
 
 unittest:
   stage: test
@@ -15,3 +25,4 @@ unittest:
       - todoapi/tests/*
   tags:
     - training_unittest
+
