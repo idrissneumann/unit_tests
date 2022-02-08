@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REPO_PATH="/home/centos/unit_tests/"
+REPO_PATH="${PROJECT_HOME}/unit_tests/"
 
 cd "${REPO_PATH}" && git pull origin main || :
 git push github main 
