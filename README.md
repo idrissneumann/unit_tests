@@ -4,6 +4,13 @@
 
 [[_TOC_]]
 
+## Périmètre
+
+Dans cette formation vous apprendrez à faire des tests unitaires et des mocks afin de bouchonner toutes vos dépendances externes que vous ne voulez pas tester dans le scope de vos TU avec les technologies suivantes :
+
+* Java JUnit, AssertJ, Mockito
+* Python Unittest
+
 ## Documentation
 
 L'ensemble des concepts pour le langage Java sont présent à [la FAQ tests](https://java.developpez.com/faq/tests/) sur developpez.com.
