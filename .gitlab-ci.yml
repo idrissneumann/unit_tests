@@ -9,7 +9,7 @@ mirror:
   only:
     - /^(main.*)$/
   tags:
-    - comwork-training
+    - mirror
 
 unittest:
   stage: test
