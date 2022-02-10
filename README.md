@@ -20,11 +20,13 @@ Vous avez également les slides de la formation [ici](./slides_formation.pdf).
 Vous avez aussi les vidéos de la formation disponibles sur youtube:
 * [Partie 1](https://youtu.be/riikMWhuJGg)
 * [Partie 2](https://youtu.be/4P0xjcOALjY)
+
 ## Dépôts de sources
 
 * Repo principal : https://gitlab.comwork.io/comwork_training/unit_tests
 * Miroir github : https://github.com/idrissneumann/unit_tests.git
 * Miroir gitlab : https://gitlab.com/ineumann/unit_tests.git
+* Miroir bitbucket : https://bitbucket.org/idrissneumann/unit_tests.git
 
 ## Pré-requis
 
